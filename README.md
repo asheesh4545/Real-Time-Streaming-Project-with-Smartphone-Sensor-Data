@@ -55,7 +55,7 @@ This project demonstrates how to set up a real-time streaming pipeline using sma
 
 2. **Configure HTTP Endpoint**
     - Create a new resource and method (POST) within your API.
-    - The resource path could be `/`, and the POST method will receive the sensor data.
+    - The resource path could be `/publishtokafka`, and the POST method will receive the sensor data.
 
 3. **Connect to Lambda Function**
     - Link the POST method directly to your Lambda function.
