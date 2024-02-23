@@ -26,7 +26,7 @@ This project demonstrates how to set up a real-time streaming pipeline using sma
     - Choose "Author from scratch", provide a function name, and select a Python runtime.
 
 2. **Deploy Python Code**
-    - After creating your function, upload your Python code. This code should process the incoming sensor data and forward it to Kafka.
+    - After creating your function, upload or copy paste the the lambda_function.py from the repo. This code should process the incoming sensor data and forward it to Kafka.
     ```python
     # Example Python code snippet for Lambda function
     def lambda_handler(event, context):
@@ -75,15 +75,11 @@ This project demonstrates how to set up a real-time streaming pipeline using sma
 5. **Download Kafka**: Use `wget https://dlcdn.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz`.
 6. **Extract Kafka Package**: Execute `tar -xvf kafka_2.13-3.4.0.tgz`.
 7. **Navigate to Kafka Directory**: Use `cd kafka_2.13-3.4.0`.
-
-
 8. **Start Zookeeper**: Run `bin/zookeeper-server-start.sh config/zookeeper.properties`.
 
 ## Step 4: Configuration for Public Access
 
 **Configure for Public Access**: Edit `server.properties` for public IP access. It is pointing to private server , change server.properties so that it can run in public IP 
-
-
 
 ### To do this , you can follow any of the 2 approaches shared below:
 - Do a vi config/server.properties in insert mode -- change ADVERTISED_LISTENERS to public ip of the EC2 instance
