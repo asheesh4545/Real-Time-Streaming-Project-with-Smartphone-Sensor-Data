@@ -42,8 +42,8 @@ This project demonstrates how to set up a real-time streaming pipeline using sma
     - In the function configuration, set the environment variables for your Kafka broker address and topic, or include them directly in your code.
 
 4. **Create a Lambda Layer for Kafka Library**
-    - Download `kafka_yt_demo.zip` from the provided link.
-    - In your Lambda function, click on "Layers" at the bottom, then "Add a layer", and select "Upload a .zip" to upload your `kafka_yt_demo.zip`.
+    - Download `kafka_layer.zip` from the repo.
+    - In your Lambda function, click on "Layers" at the bottom, then "Add a layer", and select "Upload a .zip" to upload your `kafka_layer.zip`.
     - This layer will include the necessary libraries to interact with Kafka.
 
 ### API Gateway
